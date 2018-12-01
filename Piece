@@ -1,0 +1,19 @@
+import java.awt.*;
+
+public interface Piece {
+
+    boolean canMove(Direction direction);
+
+    void draw(Graphics g);
+
+    Color getColor();
+
+    Point[] getLocations();
+
+    void move(Direction direction);
+
+    void rotate();
+
+
+
+}
