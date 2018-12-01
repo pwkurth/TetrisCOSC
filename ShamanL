@@ -1,0 +1,17 @@
+import java.awt.*;
+
+public class ShamanL extends AbstractPiece {
+
+    public ShamanL(int r, int c, Grid g) {
+        super(g);
+
+        // Create the squares
+        square[0] = new Square(g, r -1 , c  , Color.blue, true);
+        square[1] = new Square(g, r , c , Color.blue, true);
+        square[2] = new Square(g, r + 1  , c, Color.blue, true);
+        square[3] = new Square(g, r + 1, c - 1 , Color.blue, true);
+    }
+
+
+
+}
